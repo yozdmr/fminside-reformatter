@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+
+  "name": "FMInside Attribute Fixer",
+  "version": "1.0",
+  "description": "Changes the appearance of the attributes on the FMInside.net page to match the style they appear in the game Football Manager.",
+
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://fminside.net/players/*"],
+    "exclude_matches": ["https://fminside.net/players"]
+  }],
+  "permissions": ["activeTab"]
+}
